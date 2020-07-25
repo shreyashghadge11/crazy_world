@@ -20,10 +20,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 const passport = require("passport");
 // const { TokenExpiredError } = require("jsonwebtoken");
 
-// const Mongo = require("./keys").mongoDbkey;
+const Mongo = require("./keys").mongoDbkey;
 
 mongoose
-  .connect(process.env.MONGO_URI, {
+  .connect(process.env.MONGO_URI || Mongo, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     useCreateIndex: true,
