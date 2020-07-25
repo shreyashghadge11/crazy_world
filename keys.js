@@ -1,0 +1,1 @@
+module.exports={ mongoDbkey : 'mongodb+srv://shree:shree12345@cluster0.wrbam.mongodb.net/<dbname>?retryWrites=true&w=majority'}
